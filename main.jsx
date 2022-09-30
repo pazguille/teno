@@ -52,7 +52,7 @@ function App() {
           output {
             padding: 15px;
             overflow: auto;
-            min-width: calc(100vw - 30px);
+            min-width: 100vw;
             scroll-snap-align: start;
             overscroll-behavior-y: contain;
           }
@@ -79,7 +79,7 @@ function App() {
       </head>
       <body>
         <header>
-          <h1>Teno</h1>
+          <h1>Teno <small>📝 🦕</small></h1>
         </header>
 
         <main>
