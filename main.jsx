@@ -1,4 +1,4 @@
-import { serve } from "https://deno.land/std@0.140.0/http/server.ts";
+import { serve } from "https://deno.land/std@0.155.0/http/server.ts";
 import { render } from "preact-render-to-string";
 
 function App() {
@@ -111,7 +111,7 @@ function App() {
 
         <script src="https://unpkg.com/prismjs@1.28.0/prism.js"></script>
         <script type="module">{`
-          import { CSS } from 'https://cdn.deno.land/gfm/versions/0.1.22/raw/style.js';
+          import { CSS } from 'https://cdn.deno.land/gfm/versions/0.1.26/raw/style.js';
           document.querySelector('style').insertAdjacentText('beforeend', CSS);
 
           const ta = document.querySelector('textarea');
