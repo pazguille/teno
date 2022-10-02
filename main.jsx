@@ -111,6 +111,18 @@ function App() {
 
         <script src="https://unpkg.com/prismjs@1.28.0/prism.js"></script>
         <script type="module">{`
+          window.requestIdleCallback = window.requestIdleCallback || function (cb) {
+            var start = Date.now();
+            return setTimeout(function () {
+              cb({
+                didTimeout: false,
+                timeRemaining: function () {
+                  return Math.max(0, 50 - (Date.now() - start));
+                }
+              });
+            }, 1);
+          };
+
           import { CSS } from 'https://cdn.deno.land/gfm/versions/0.1.26/raw/style.js';
           document.querySelector('style').insertAdjacentText('beforeend', CSS);
 
