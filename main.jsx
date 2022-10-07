@@ -7,7 +7,11 @@ function App() {
       <head>
         <meta charset="utf-8" />
         <meta name="HandheldFriendly" content="True" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, viewport-fit=cover" />
+        <meta name="apple-touch-fullscreen" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-title" content="Teno" />
+        <meta name="theme-color" content="#0d1117" />
         <title>Teno</title>
         <script type="module" src="https://md-block.verou.me/md-block.js"></script>
         <style>{`
