@@ -64,6 +64,7 @@ function App() {
           textarea {
             border: none;
             outline: none;
+            font-size: 16px;
           }
 
           @media(min-width: 54em) {
