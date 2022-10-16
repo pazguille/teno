@@ -33,7 +33,9 @@ function App() {
           }
 
           main {
-            display: flex;
+            display: grid;
+            grid-template-columns: 100vw 100vw;
+            align-content: start;
             height: calc(100vh - 120px);
             overflow-x: scroll;
             overflow-y: hidden;
@@ -56,9 +58,10 @@ function App() {
           output {
             padding: 15px;
             overflow: auto;
-            min-width: 100vw;
             scroll-snap-align: start;
-            overscroll-behavior-y: contain;
+            overscroll-behavior-y: contain;s
+            min-width: 100vw;
+            min-height: 100vh;
           }
 
           textarea {
@@ -71,11 +74,11 @@ function App() {
             main {
               padding: 10px 15px;
               height: calc(100vh - 140px);
+              grid-template-columns: 1fr 1fr;
             }
 
             textarea,
             output {
-              width: 50%;
               min-width: auto;
               border-radius: 10px;
             }
